@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    {% load static %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+    <title>Registration form</title>
+</head>
+<body>
+<div class="container" style="margin-top: 2em">
+                <div class="row">
+                    <div class="col-md-3">
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header bg-info text-center text-black">
+                                <h3>Sign up</h3></div>
+                                <div class="card-body">
+                                    <form method="post" action="Reg.php">
+                                    <div class="form-group">
+                                        <label for="Fname">First Name</label>
+                                        <input type="text" class="form-control" name="fname" id="Fname" placeholder="...e.g johnvic" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Lname">Last Name</label>
+                                        <input type="text" class="form-control" name="lname" id="Lname" placeholder="...e.g stacey" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="text" class="form-control" name="mail" id="email" placeholder="...e.g johnvic@gmail.com" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="DOB">Date Of Birth</label>
+                                        <input type="date" class="form-control" name="dob" id="DOB" placeholder="...e.g dd/mm/yyy" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="pass">Password</label>
+                                        <input type="password" class="form-control" name="pword" id="pass" placeholder="...e.g johnvic268" required="">
+                                    </div>
+                                        <button type="submit" class="btn btn-danger">Reset</button>
+                                        <button type="submit" class="btn btn-info">Register</button>
+                                        <p class="message">You are a member? <a href="Login.html">Login</a></p>
+                            </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'blog/js/bootstrap.min.css' %}"></script>
+</body>
+</html>
